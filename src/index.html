@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="@@ENDERECO_DO_css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU&family=Roboto&display=swap" rel="stylesheet">
+    <title>Agenda de Leads</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/iconeagenda.webp" alt="Icone de agenda">
+            <h1>Agenda telefônica</h1>
+        </header>
+        <form id='formulario-contatos'>
+            <input id='form-nome' type="text" required placeholder="Nome do Contato" />
+            <input id="form-numero" type="number" required required placeholder="Número do Contato" />
+            <Label for="form-linha">Tem linha?</Label>
+            <input id="form-linha" type="checkbox" checked>
+            <Label for="form-whatsapp">Tem whatsapp?</Label>
+            <input id="form-whatsapp" type="checkbox">
+            <button id='botao-enviar' type="submit">Salvar número</button>
+        </form>
+        <p id="mensagem-sucesso" class="nosee">
+        </p>
+        <p id="dois-nomes" class="nosee">
+            Favor, informar ao menos dois nomes.
+        </p>
+        <p id="dois-contatos" class="nosee">
+            Favor, informar ao menos uma forma de contato.
+        </p>
+        <table>
+            <thead>
+                <tr>    
+                    <th>Nome</th>
+                    <th id='form-numero' >Número</th>
+                    <th id="form-contato">Contato</th>
+                </tr>
+            </thead>
+            <tbody id="corpo-agenda">
+            </tbody>
+        </table>
+        <table id="soma-contatos">
+            <tr>
+                <th>Número de contatos salvos</td>
+                <th id="total-contatos"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="@@ENDERECO_DO_JS"></script>
+</body>
+</html>
